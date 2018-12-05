@@ -21,6 +21,7 @@ private:
 	void render();
 	
 	void setupButtons(); // set up button properties
+	void setupText(); // load font file and setup text elements
 
 	//colours for our buttons and text
 	const sf::Color RED{ 180, 0, 0, 255 };
@@ -36,6 +37,9 @@ private:
 	sf::RectangleShape m_yellowSquare; // yellow button / light
 	sf::RectangleShape m_blueSquare; // blue button / light
 	sf::RectangleShape m_greenSquare; // green button / light
+	sf::Font m_impactFont; // font used in the game
+	sf::Text m_titleText; // text for title
+
 };
 
 #endif // !GAME

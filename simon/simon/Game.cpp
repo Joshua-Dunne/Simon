@@ -14,6 +14,7 @@ Game::Game() :
 	m_blueSquare{ sf::Vector2f(200.0f, 200.0f) }
 {
 	setupButtons();
+	setupText();
 }
 
 
@@ -39,6 +40,20 @@ void Game::setupButtons()
 	m_yellowSquare.setPosition(sf::Vector2f(350, 250));
 	m_blueSquare.setFillColor(BLUE);
 	m_blueSquare.setPosition(sf::Vector2f(570, 250));
+}
+
+void Game::setupText()
+{
+	// load the font file
+	if (m_impactFont.loadFromFile("assets/fonts/impact.ttf"))
+	{
+		std::cout << "font loaded ok" << std::endl;
+	}
+	m_titleText.setFont(m_impactFont);
+	m_titleText.setFillColor(WHITE); // wahoite
+	m_titleText.setCharacterSize(64u);
+	m_titleText.setPosition(50, 30);
+	m_titleText.setString("S I M O N");
 }
 
 void Game::run()
@@ -105,5 +120,6 @@ void Game::render()
 	m_window.draw(m_redSquare);
 	m_window.draw(m_yellowSquare);
 	m_window.draw(m_blueSquare);
+	m_window.draw(m_titleText);
 	m_window.display();
 }
