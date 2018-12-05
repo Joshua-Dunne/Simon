@@ -1,7 +1,7 @@
 /// <summary>
 /// simple game loop for SFML[2.4.2]
 /// 
-/// @author Peter Lowe
+/// @author Joshua Dunne, Conor Deegan
 /// @date May 21017
 /// </summary>
 
