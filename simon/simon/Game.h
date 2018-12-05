@@ -39,6 +39,11 @@ private:
 	sf::RectangleShape m_greenSquare; // green button / light
 	sf::Font m_impactFont; // font used in the game
 	sf::Text m_titleText; // text for title
+	sf::Text m_instructionsTextBlue; // text for blue instructions
+	sf::Text m_instructionsTextRed; // text for red instructions
+	sf::Text m_instructionsTextGreen; // text for green instructions
+	sf::Text m_instructionsTextYellow; // text for yellow instructions
+	sf::Text m_statusText; // status text
 
 };
 
